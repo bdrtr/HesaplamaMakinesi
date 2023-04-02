@@ -13,11 +13,11 @@ Bu proje AST kullanılarak oluşturulmuş bir hesap makinesidir.
 
 ## Kullanım/Örnekler
 
-Kod her girdiyi bir tokene çevirerek bilgileri işlem önceliklerine göre düzenler ve tam sayıları ve ondalıklı sayıları bir birinden ayırt edebilir.
+Kod, her girdiyi bir "token" olarak adlandırılan birimlere ayırır ve bu tokenleri işlem önceliklerine göre düzenler. Ayrıca tam sayıları ve ondalıklı sayıları birbirinden ayırt edebilir.
 
-kaçınılması gereken temel kullanımda +1 veya 2(3*2) gibi kullanımlardır bu kullanımlar arasında tokene dönüşecek ifadeler olmadığı için hata vericeklerdir.
+Ancak, "+1" veya "2(3*2)" gibi kullanımlardan kaçınılması gerekir. Bu kullanımlar, tokene dönüşecek ifadeler içermediği için hata verecektir.
 
-Sayı hassasiyeti 'double' ile arttırılmıştır.Bilgisayar sistemlerinde hesaplama yaparken sayıların baz noktalarından sonra olmaması gerek değişikler içerdiği görülebilir. 
+Sayı hassasiyeti, "double" veri tipi ile artırılmıştır. Bilgisayar sistemlerinde hesaplama yaparken, sayıların baz noktalarından sonra belirli bir hassasiyeti olmaması gerektiği konusunda bazı değişiklikler içerebilir.
 
 ![örnek 3](https://user-images.githubusercontent.com/69633060/229347694-afe84d74-4a0e-4956-8a92-da80a0b1c580.png)
 
