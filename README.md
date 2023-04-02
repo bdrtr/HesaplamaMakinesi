@@ -10,3 +10,21 @@ Bu proje AST kullanılarak oluşturulmuş bir hesap makinesidir.
 ![örnek 2](https://user-images.githubusercontent.com/69633060/228752395-69aa55b1-82b0-47db-b64c-8b41d2def821.png)
 
   
+
+## Kullanım/Örnekler
+
+Kod her girdiyi bir tokene çevirerek bilgileri işlem önceliklerine göre düzenler ve tam sayıları ve ondalıklı sayıları bir birinden ayırt edebilir.
+
+kaçınılması gereken temel kullanımda +1 veya 2(3*2) gibi kullanımlardır bu kullanımlar arasında tokene dönüşecek ifadeler olmadığı için hata vericeklerdir.
+
+Sayı hassasiyeti 'double' ile arttırılmıştır.Bilgisayar sistemlerinde hesaplama yaparken sayıların baz noktalarından sonra olmaması gerek değişikler içerdiği görülebilir. 
+
+![örnek 3](https://user-images.githubusercontent.com/69633060/229347694-afe84d74-4a0e-4956-8a92-da80a0b1c580.png)
+
+Bilgisayarlar, sayıları bilgisayar belleğinde tutmak için sınırlı miktarda bit kullanırlar. Bu nedenle, çok küçük sayılar gibi hassas sayılar için tam olarak doğru bir gösterim elde etmek zordur.
+
+0.000003 ve 0.000002 gibi çok küçük sayılar, bilgisayar belleğinde sadece sınırlı sayıda bitle temsil edilebilirler. Bu, bu sayıların tam olarak doğru bir şekilde gösterilemeyeceği anlamına gelir.
+
+Örneğin, bir 32-bit işletim sistemi kullanıyorsanız, bellek bölgesinde sadece 32-bitlik sayılar kullanabilirsiniz. Bu da en küçük değerin 2^-32 olduğu anlamına gelir. Bu, 0.000003 veya 0.000002 gibi çok küçük sayılar için yeterli olmayabilir.
+
+Bilgisayarlar, bu gibi hassas sayıları temsil etmek için kayan nokta aritmetiği kullanırlar. Ancak, kayan nokta aritmetiği de tam olarak doğru sonuçlar veremez. Bu nedenle, 0.000003 ve 0.000002 gibi sayılar için tam olarak doğru sonuçlar elde etmek zordur ve genellikle yaklaşık sonuçlar verilir.
